@@ -6,8 +6,8 @@ fastf1.Cache.enable_cache("cache")
 session = fastf1.get_session(2025, 'Dutch Grand Prix', 'R')
 session.load(telemetry=False, laps=True, weather=True)
 
-pia = session.get_driver('VER') 
-print(f"Pronto {pia['FirstName']}?")
+pickDriver = session.get_driver('VER') 
+print(f"Pronto {pickDriver['FirstName']}?")
 
 
 for drv in session.drivers: 
